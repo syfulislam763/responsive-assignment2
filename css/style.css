@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+/* repeating style */
+.btn-shopping{
+    padding:13px 30px;
+    background-color: #3746CB;
+    color: white;
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+}
+.bg-color-pink{
+    background-color: #FFF9F4;
+}
+
+.color-orange{
+    color: orange;
+}
+.big-font{
+    font-size: 60px;
+}
+
+/* style for banner container */
+.banner-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.photo-container{
+    width: 70%;
+}
+.photo-container img {
+    width: 70%;
+}
+.text-container{
+    width: 30%;
+}
+
+
+
+/* style for product card */
+.shoes-container h2{
+    padding: 30px 0px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-card{
+    width: 30%;
+    box-shadow: 2px 2px 13px 2px lavender;
+    padding: 15px;
+    border-radius: 15px;
+}
+.product-card h4{
+    padding: 10px 0px;
+}
+.casual-card-img{
+    width: 100%;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    padding: 20px;
+    transform: rotateY(0deg);
+    transition: transform 2s;
+}
+.product-card-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.formal-card-img{
+    width: 100%;
+    padding: 20px;
+    transform: rotateY(0deg);
+    transition: transform 2s;
+}
+
+.animate-img:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+
+
+/* style for data card and banner image */
+.data-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.data-card-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.data-img-container{
+    width: 50%;
+}
+.data-img-container img {
+    width: 100%;
+}
+.data-card{
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   box-shadow: 2px 2px 13px 2px lavender;
+   padding: 15px;
+   border-radius: 10px;
+}
+.data-card img{
+    width:20%;
+}
+.data-text{
+    width: 70%;
+    text-align: justify;
+}
+
+
+
+.social-icon{
+    font-size: 30px;
+    padding: 10px;
+}
+.social-icon-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 270px){
+    .product-card-footer{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .data-card img{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .data-container{
+        flex-direction: column;
+    }
+    .data-card-container{
+        width: 100%;
+        order: 2;
+    }
+    .data-img-container{
+        width: 100%;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .data-card{
+        flex-direction: column;
+    }
+    .data-text{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+
+    .shoes-container{
+        text-align: center;
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card{
+        width: 95%;
+        margin-top: 20px;
+    }
+    .banner-container{
+        flex-direction: column;
+        padding-left: 23px;
+    }
+    .photo-container{
+        width: 100%;
+        order: 2;
+        padding: 20px 0px 30px 0px;
+    }
+    .text-container{
+        width: 100%;
+        order: 1;
+    }
+    .photo-container img{
+        width: 80%;
+    }
+    .big-font{
+        font-size: 40px;
+    }
+}
